@@ -126,7 +126,9 @@ class Standard:
             raise InternalError("template/AGENTS.md has no valid versioned base block")
         self.version = m.group(1)
         wt = worktrees_dir.strip("/\\")
-        self.block = [x.replace("<worktrees_dir>", wt) for x in lines[s[0]:e[0] + 1]]
+        # The block as the template ships it, placeholder unfilled: what the new skill copies.
+        self.unfilled = lines[s[0]:e[0] + 1]
+        self.block = [x.replace("<worktrees_dir>", wt) for x in self.unfilled]
         self.agents_new = tpl.replace("<worktrees_dir>", wt)
         with open(os.path.join(PLUGIN_ROOT, "references", "conventions.md"), "rb") as f:
             conv = f.read().decode("utf-8").replace("\r\n", "\n")
@@ -302,8 +304,8 @@ def desired(f, block_wanted, std, add, notes):
             notes.append("AGENTS.md block is newer (%s); left it" % bver)
         elif ag is None:
             writes[AGENTS] = std.agents_new.encode("utf-8")
-        elif bver == std.version and [x.rstrip("\r") for x in
-                                      ag[0].split("\n")[binfo[0]:binfo[1] + 1]] != std.block:
+        elif bver == std.version and [x.rstrip("\r") for x in ag[0].split("\n")[
+                binfo[0]:binfo[1] + 1]] not in (std.block, std.unfilled):  # unfilled is not an edit
             notes.append(EDITED % ("AGENTS.md block", bver, ", or placed with another worktrees folder"))
         else:
             text, bom, crlf = ag
