@@ -26,7 +26,7 @@ two levels above this skill's folder.
    `PLAYBOOK_PROFILE` when it is set and the file exists; else the path in
    the one-line file `.playbook` in the user's home folder; else the older
    `PROJECT_GUIDE_PROFILE` or `.project-guide`. If none exists, invoke the
-   `profile` skill to create one, then continue with it. Read its
+   `setup-playbook-profile` skill to create one, then continue with it. Read its
    `projects_root`, `worktrees_dir` (default `.claude/worktrees`), and the
    optional `shared_namespaces` list.
 2. Plan, which only reads, with Python 3.9 or later:

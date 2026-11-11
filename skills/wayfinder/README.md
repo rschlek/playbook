@@ -17,7 +17,7 @@ Charts a piece of work too big for one agent session as the standard's decision 
 - Research output is a dated document under `docs/`, linked from its ticket, instead of a never-merged branch.
 - Every tracker step goes through the tracker doc's `## Wayfinding operations` (Map, Child ticket, Type marker, Claim, Frontier query, Resolve); the skill names no tracker product, label syntax, or command line.
 - The option to carry execution into the map was dropped: the skill plans only, and when no question is left asks whether to create the tickets now, invoking `to-tickets` on a yes. A decision that invalidates other tickets changes them only on the user's yes, and a skill named in the map's Notes is offered, not invoked unasked.
-- Harness-neutral: sibling skills are invoked by name (`grill-me`, `glossary`, `research`, `prototype`, `to-tickets`, `new`, `profile`), with an inline fallback where a fresh-context subagent is wanted.
+- Harness-neutral: sibling skills are invoked by name (`grill-me`, `glossary`, `research`, `prototype`, `to-tickets`, `new`, `setup-playbook-profile`), with an inline fallback where a fresh-context subagent is wanted.
 - Reference detail (map body, ticket types, fog and scope, decision file shape) moved to `MAP.md` to keep `SKILL.md` near 100 lines.
 
 ## Maintainer notes

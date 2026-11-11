@@ -1,18 +1,22 @@
 ---
-name: profile
+name: setup-playbook-profile
 description: >-
-  Create, show, or change the playbook profile: the one file per user on each
-  machine that holds the projects root, the worktrees folder, the scopes with
-  their hosts and namespaces, and the default tracker; and set up the tracker doc for the default tracker beside it. Use
-  when the user says "set up my profile", "create the playbook profile", "show
-  my profile", "change my projects root", "set up my tracker", "change my
-  default tracker", and when the
-  new, adopt, sync, or any tracker-using skill finds no profile or no tracker
-  doc. Do NOT use to change a project's project.yaml or its own tracker doc
-  (that is adopt), or to store credentials.
+  Set up playbook for the user, once per user on each machine: create, show,
+  or change the user's profile (the default tracker, and the projects root
+  and scopes when a project needs them), and connect the tracker by writing
+  its tracker doc, checked against the live tracker. Use when the user says
+  "set up playbook", "connect my tracker", "set up my tracker", "change my
+  tracker", "show my profile", "change my projects root", on first use of
+  the plugin with no tracker doc, and when another skill finds no profile or
+  no tracker doc. Do NOT use to create a project (that is new), to bring an
+  existing repository to the standard or change its project.yaml or own
+  tracker doc (that is adopt), or to store credentials.
 ---
 
-# Profile
+# Setup playbook profile
+
+This skill creates, shows, and changes the profile; the profile file itself
+keeps its name and lookup.
 
 Paths such as `references/conventions.md` are relative to the plugin's root
 folder, two levels above this skill's folder.

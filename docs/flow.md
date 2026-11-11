@@ -88,7 +88,7 @@ Over a few evenings they `tackle` one at a time. The receipts ticket stops partw
 | Skill | Use it when | Do not use it when | What it leaves behind |
 |---|---|---|---|
 | **Set up a project** | | | |
-| `profile` | First time on a machine, or changing the default tracker | Changing one project's settings (`adopt`) | The profile file and the user's tracker doc beside it |
+| `setup-playbook-profile` | First time on a machine, or changing the default tracker | Changing one project's settings (`adopt`) | The profile file and the user's tracker doc beside it |
 | `new` | Starting a project from nothing | The repository already exists (`adopt`) | A project folder with its standard files, a repository, and its tracker doc when it needs one |
 | `adopt` | Bringing an existing repository to the standard | Creating a project (`new`) | The missing standard files, `project.yaml` filled in, a list of gaps |
 | `sync` | The standard has a new version, or repos came from project-guide | One repository that was never adopted (`adopt`) | Updated base blocks and conventions copies, review branches for shared repos |
@@ -107,6 +107,6 @@ Over a few evenings they `tackle` one at a time. The receipts ticket stops partw
 
 ## Setting up
 
-- **Once per machine:** run `profile`. For everyday tickets it needs only your tracker; it asks for your projects folder and scopes when you first start a project.
-- **Once per tracker kind:** the tracker setup inside `profile` (or `new` or `adopt` for a project with its own) writes a tracker doc from a shipped template. With no tracker yet, pick `markdown`: tickets become files in the project's repository. It proposes the steps, runs the query for pickable work so you can see what would be offered, and creates nothing in the tracker without your yes.
+- **Once per machine:** run `setup-playbook-profile`. For everyday tickets it needs only your tracker; it asks for your projects folder and scopes when you first start a project.
+- **Once per tracker kind:** the tracker setup inside the `setup-playbook-profile` skill (or `new` or `adopt` for a project with its own) writes a tracker doc from a shipped template. With no tracker yet, pick `markdown`: tickets become files in the project's repository. It proposes the steps, runs the query for pickable work so you can see what would be offered, and creates nothing in the tracker without your yes.
 - **Once per project:** only for an initiative with records to keep, `new` for fresh work or `adopt` for a repository that already exists. After that, `next` tells you where you are.

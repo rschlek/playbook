@@ -2,6 +2,10 @@
 
 Changes to the rules in `conventions.md`, newest first.
 
+## 2026-11-10 (1.0.1)
+
+- The `profile` skill is renamed `setup-playbook-profile`: it sets up playbook for the user (the profile and the tracker doc), once per machine, and is no longer confused with `new` or `adopt`. The profile file, its lookup, and `profile.example.yaml` keep their names. The standard references the new skill name, so the base block and conventions copy move to 1.0.1.
+
 ## 2026-11-10
 
 User rulings (version 1.0.0). The project-guide plugin becomes `playbook`, covering how work moves through a project as well as how it is set up, for any kind of project:

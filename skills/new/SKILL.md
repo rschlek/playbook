@@ -10,7 +10,9 @@ description: >-
   project", "create a repo for X", "set up a project for X", "scaffold a
   project to the standard", or when work that needs records has no
   repository yet. Do NOT use for an existing repository (that is adopt), for
-  adding a worktree to a project, or for adding a ticket (that is capture).
+  adding a worktree to a project, for adding a ticket (that is capture), or
+  for setting up playbook itself or a tracker (that is
+  setup-playbook-profile).
 ---
 
 # New project
@@ -25,7 +27,7 @@ folder, two levels above this skill's folder.
    `PLAYBOOK_PROFILE` when it is set and the file exists; else the path in
    the one-line file `.playbook` in the user's home folder; else the older
    `PROJECT_GUIDE_PROFILE` or `.project-guide`. If none exists, invoke the
-   `profile` skill to create one, then continue with it.
+   `setup-playbook-profile` skill to create one, then continue with it.
 3. Ask for the scope (from the profile's list), the subject, a human-readable
    title, a one-sentence summary saying what it is and who it is for, and
    whether it is private, internal, or public (private unless the user

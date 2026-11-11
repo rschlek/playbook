@@ -20,7 +20,7 @@ A local checkout works the same way: pass its folder to `marketplace add`. Start
 
 ## First run
 
-1. Invoke the `profile` skill. It asks which tracker you use and sets up a tracker doc for it; that is all everyday work needs. No tracker yet? Choose `markdown`: tickets are files in a repository, and nothing else is needed.
+1. Invoke the `setup-playbook-profile` skill. It asks which tracker you use and sets up a tracker doc for it; that is all everyday work needs. No tracker yet? Choose `markdown`: tickets are files in a repository, and nothing else is needed.
 2. Everyday tickets (an errand, a chore, a one-off task) need no repository and no project: `capture` and `tackle` work with the tracker doc alone.
 3. When you start an initiative that produces something and has decisions worth recording, invoke `new` for it, or `adopt` in a repository you already have. Its records (decisions, glossary, research) live in that repository.
 4. Invoke `next` whenever you are unsure what to do: it says where things stand and which skill comes next.
@@ -59,7 +59,7 @@ A project keeps three things apart (a standalone ticket lives only in the tracke
 
 Set up a project:
 
-- `profile`: create, show, or change the profile, and set up the default tracker's doc.
+- `setup-playbook-profile`: set up playbook for the user, once per machine: create, show, or change the profile, and connect the tracker through a tracker doc checked against the live tracker.
 - `new`: create a new project to the standard, its tracker doc included.
 - `adopt`: bring an existing repository up to the standard in place, and set up its tracker.
 - `sync`: bring every adopted project's base block and conventions copy up to date in one run, migrating project-guide repositories.
@@ -82,7 +82,7 @@ Thinking:
 
 ## Profile
 
-The skills find the user's profile on this machine through the environment variable `PLAYBOOK_PROFILE`, or else a one-line file `.playbook` in the home folder containing the profile's path. When neither exists they fall back to the older `PROJECT_GUIDE_PROFILE` and `.project-guide`, so a profile written for project-guide keeps working; the profile skill offers to write the new pointer. The profile skill creates the profile from a few questions; or start from `references/profile.example.yaml`. The user's tracker docs sit beside the profile file, in `trackers/<kind>.md`.
+The skills find the user's profile on this machine through the environment variable `PLAYBOOK_PROFILE`, or else a one-line file `.playbook` in the home folder containing the profile's path. When neither exists they fall back to the older `PROJECT_GUIDE_PROFILE` and `.project-guide`, so a profile written for project-guide keeps working; the `setup-playbook-profile` skill offers to write the new pointer. The `setup-playbook-profile` skill creates the profile from a few questions; or start from `references/profile.example.yaml`. The user's tracker docs sit beside the profile file, in `trackers/<kind>.md`.
 
 ## Upgrading from project-guide
 

@@ -1,4 +1,4 @@
-# Example profile, one per user on each machine. The profile skill writes one from
+# Example profile, one per user on each machine. The `setup-playbook-profile` skill writes one from
 # your answers; or copy this, fill in real values, and point the skills at the copy
 # (environment variable PLAYBOOK_PROFILE, or a one-line ~/.playbook file holding
 # the path; the older PROJECT_GUIDE_PROFILE and ~/.project-guide still work).

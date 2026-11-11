@@ -9,7 +9,8 @@ description: >-
   "make this repo conform", "set up the tracker for this project", or "check
   this repo against the standard". Do NOT use for creating a new project
   (that is new), for updating the base block across many repos (that is
-  sync), or for moving or renaming a repository.
+  sync), for setting up playbook itself or the user's default tracker (that
+  is setup-playbook-profile), or for moving or renaming a repository.
 ---
 
 # Adopt a repository
@@ -24,7 +25,7 @@ folder, two levels above this skill's folder.
    `PLAYBOOK_PROFILE` when it is set and the file exists; else the path in
    the one-line file `.playbook` in the user's home folder; else the older
    `PROJECT_GUIDE_PROFILE` or `.project-guide`. If none exists, invoke the
-   `profile` skill to create one, then continue with it.
+   `setup-playbook-profile` skill to create one, then continue with it.
 3. Look at the repo: folder name, the `origin` remote, README, existing agent
    files, `.gitignore`, any existing `project.yaml`, and any existing tracker
    doc (`docs/tracker.md`, or a doc another tool left describing the issue

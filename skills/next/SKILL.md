@@ -9,8 +9,8 @@ description: >-
   "what should I do next", "where does this project stand", "which skill do
   I use", or "I'm not sure what to do". Do NOT use to pick a specific ticket
   to do (that is tackle), to walk the user through decisions in plain
-  language (that is untangle), or to set anything up (that is profile, new,
-  or adopt).
+  language (that is untangle), or to set anything up (that is
+  setup-playbook-profile, new, or adopt).
 ---
 
 # Next
@@ -26,7 +26,7 @@ describes the flow this skill places the project in.
 
 1. **Tracker doc.** Resolve it as `references/tracker-lookup.md` says: a
    repository's own `docs/tracker.md` needs no profile and no
-   `project.yaml`. None found: the answer is the `profile` skill (with no
+   `project.yaml`. None found: the answer is the `setup-playbook-profile` skill (with no
    profile) or its tracker setup, and Look stops here. Nothing else is a
    gap: standalone tickets need no project.
 2. **Project.** Note whether the current folder has a `project.yaml`.

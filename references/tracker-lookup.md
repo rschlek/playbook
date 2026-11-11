@@ -6,7 +6,7 @@ The procedure every skill that uses a tracker follows before its first tracker c
 
 1. The current repository's `docs/tracker.md`, when it has one. This needs no profile and no `project.yaml`.
 2. Else `trackers/<kind>.md` in the folder holding the profile, for each kind in `project.yaml` `tracking` (the primary and any secondaries) when that file exists, else for the profile's `tracker.kind`. The profile is the file named by the environment variable `PLAYBOOK_PROFILE`, else by the one-line file `.playbook` in the home folder, else by the older `PROJECT_GUIDE_PROFILE` or `.project-guide`. A `ref` in `tracking` narrows the doc's Where. A primary and a secondary doc found this way work together as one two-tracker doc.
-3. Else stop: say no tracker doc was found, and ask the user to run the tracker setup in the `profile` skill (it writes `docs/tracker.md` in a repository when there is no profile). Never guess a tracker, and never fall back to another tracker or a file in its place.
+3. Else stop: say no tracker doc was found, and ask the user to run the tracker setup in the `setup-playbook-profile` skill (it writes `docs/tracker.md` in a repository when there is no profile). Never guess a tracker, and never fall back to another tracker or a file in its place.
 
 ## Read it
 

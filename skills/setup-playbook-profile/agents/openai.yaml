@@ -1,0 +1,4 @@
+interface:
+  display_name: "Setup Playbook Profile"
+  short_description: "Set up playbook for the user: the profile and the tracker doc"
+  default_prompt: "Set up playbook."
