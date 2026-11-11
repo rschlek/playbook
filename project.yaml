@@ -1,0 +1,10 @@
+project: playbook
+title: Playbook
+summary: A generic standard and plugin for how a project is set up and how its work moves through a tracker, for anyone who keeps many projects and works with agents.
+owner: github.com/rschlek
+scope: personal
+tracking:
+metadata:
+  memory-tag: project:playbook
+links:
+visibility: public

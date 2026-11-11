@@ -1,0 +1,4 @@
+interface:
+  display_name: "Profile"
+  short_description: "Create, show, or change the profile and set up the default tracker doc"
+  default_prompt: "Set up my profile."

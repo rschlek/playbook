@@ -1,0 +1,22 @@
+{
+  "name": "playbook",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "How a project is set up and how work moves through it, for any kind of project: a small standard for laying out and describing projects, tracker docs that tell agents how to read and write tickets in any tracker, and skills to set up or adopt a project, chart open decisions as a map, turn a finished plan into tickets, capture a ticket, tackle one, say where a project stands and what comes next, and think the work through (grill a plan, sharpen terms, research, prototype, untangle).",
+  "author": {
+    "name": "rschlek"
+  },
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Playbook",
+    "shortDescription": "Set up a project and move its work through a tracker.",
+    "longDescription": "A standard for a flat projects root, the files every project carries (including a local copy of the conventions and a base block in AGENTS.md), a project.yaml manifest, naming, remotes and visibility, worktrees, and where a project's decisions, research, and plans live. Tracker docs tell an agent how to read and write tickets in any tracker. Skills create or adopt a project, keep adopted projects current, chart and work a map of open decisions, turn a finished plan into tickets, capture one ticket, tackle a ticket through to an honest close, and say where a project stands and which skill comes next; others grill a plan, sharpen a project's terms, research a question from primary sources, prototype a design question, and untangle a pile into plain, small decisions.",
+    "developerName": "rschlek",
+    "category": "Productivity",
+    "capabilities": [
+      "Read",
+      "Write"
+    ],
+    "defaultPrompt": "Start a new project to the standard."
+  }
+}

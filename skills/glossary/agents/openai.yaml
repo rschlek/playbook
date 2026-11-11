@@ -1,0 +1,3 @@
+interface:
+  display_name: "Glossary"
+  short_description: "Pin down a project's words in its glossary"

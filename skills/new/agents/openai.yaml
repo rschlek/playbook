@@ -1,0 +1,4 @@
+interface:
+  display_name: "New Project"
+  short_description: "Create a new project to the standard"
+  default_prompt: "Start a new project to the standard."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Sync"
+  short_description: "Bring every adopted repo's base block and conventions copy up to date"
+  default_prompt: "Which repos are behind the standard?"

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Capture"
+  short_description: "Add one well-formed ticket to the right tracker and place"
+  default_prompt: "Capture this as a ticket."

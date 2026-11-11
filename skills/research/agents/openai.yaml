@@ -1,0 +1,4 @@
+interface:
+  display_name: "Research"
+  short_description: "Research one question from primary sources into a dated, cited document"
+  default_prompt: "Research this question from primary sources."

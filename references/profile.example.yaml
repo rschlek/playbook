@@ -1,0 +1,35 @@
+# Example profile, one per user on each machine. The profile skill writes one from
+# your answers; or copy this, fill in real values, and point the skills at the copy
+# (environment variable PLAYBOOK_PROFILE, or a one-line ~/.playbook file holding
+# the path; the older PROJECT_GUIDE_PROFILE and ~/.project-guide still work).
+# The user's tracker docs sit beside this file, in trackers/<kind>.md.
+
+projects_root: ~/projects          # flat folder holding every project
+worktrees_dir: .claude/worktrees   # where worktrees nest inside a project
+
+shared_namespaces:                 # optional: remote namespaces of repos other people use; sync sends their updates through review
+  - example-team                   # or host/namespace, such as git.example.com/example-team
+
+scopes:
+  team:
+    meaning: projects the team owns
+    prefix: true                   # new project names start with "team-"
+    host: git.example.com
+    namespace: example-user
+  lab:
+    meaning: one group's experiments
+    prefix: true
+    host: git.example.com
+    namespace: example-user
+  personal:
+    meaning: personal projects
+    prefix: false                  # personal projects take no prefix
+    host: code.example.org
+    namespace: example-user
+
+tracker:                           # the default tracker, for a project that declares none
+  kind: example-tracker            # a kind with a tracker doc at trackers/<kind>.md beside this file
+  url: https://tracker.example.com/browse/{key}
+
+metadata:                          # optional, free-form: anything your own tooling wants; the plugin never reads it
+  review-cycle: quarterly

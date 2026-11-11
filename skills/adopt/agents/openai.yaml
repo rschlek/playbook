@@ -1,0 +1,4 @@
+interface:
+  display_name: "Adopt"
+  short_description: "Bring an existing repository up to the standard in place"
+  default_prompt: "Bring this repo up to the standard."

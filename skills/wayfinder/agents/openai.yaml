@@ -1,0 +1,6 @@
+interface:
+  display_name: "Wayfinder"
+  short_description: "Chart a large effort as a decision map and work its questions one at a time"
+  default_prompt: "Chart a decision map for this idea."
+policy:
+  allow_implicit_invocation: false

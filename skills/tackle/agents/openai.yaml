@@ -1,0 +1,4 @@
+interface:
+  display_name: "Tackle"
+  short_description: "Do an existing ticket and close it out honestly, or pick one to do now"
+  default_prompt: "What should I work on?"

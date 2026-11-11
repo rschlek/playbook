@@ -1,0 +1,15 @@
+{
+  "name": "playbook",
+  "owner": {
+    "name": "rschlek"
+  },
+  "description": "Single-plugin catalog so this repository can be installed directly.",
+  "plugins": [
+    {
+      "name": "playbook",
+      "source": "./",
+      "description": "How a project is set up and how work moves through it, for any kind of project: a small standard, tracker docs for any tracker, and skills to set up a project, map open decisions, turn a plan into tickets, and do them.",
+      "category": "productivity"
+    }
+  ]
+}

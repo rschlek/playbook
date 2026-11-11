@@ -1,0 +1,14 @@
+{
+  "name": "playbook",
+  "interface": {
+    "displayName": "Playbook (direct install)"
+  },
+  "plugins": [
+    {
+      "name": "playbook",
+      "source": { "source": "local", "path": "./" },
+      "policy": { "installation": "AVAILABLE", "authentication": "ON_INSTALL" },
+      "category": "Productivity"
+    }
+  ]
+}

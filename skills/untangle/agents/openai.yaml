@@ -1,0 +1,4 @@
+interface:
+  display_name: "Untangle"
+  short_description: "Walk a pile back as small plain decisions, one at a time"
+  default_prompt: "I'm lost. Break this down into one decision at a time."

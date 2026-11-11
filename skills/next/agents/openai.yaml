@@ -1,0 +1,4 @@
+interface:
+  display_name: "Next"
+  short_description: "Say where the project stands and which one skill to use next"
+  default_prompt: "Where does this project stand, and what should I do next?"

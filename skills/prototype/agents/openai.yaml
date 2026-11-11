@@ -1,0 +1,4 @@
+interface:
+  display_name: "Prototype"
+  short_description: "Make a rough throwaway draft, mock-up, or demo to answer one design question"
+  default_prompt: "Prototype a few options for this so I can react to them."
