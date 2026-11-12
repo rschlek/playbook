@@ -69,10 +69,17 @@ work ticket goes in the tracker the doc assigns its kind to.
 The plan carries no progress and no statuses. Write it and any decision file
 by the record rule in "Documents" of `references/conventions.md`.
 
+When the tracker doc gives tickets a run mode, mark a ticket unattended (an
+agent works it alone, with nobody watching) only if its `Check:` line names
+a check a machine can run: a command, test, or script whose pass or fail a
+machine observes with no person judging the result. Mark any other ticket
+for a person, including one whose done line needs a person's eyes or
+judgment ("looks right on the phone"), and say so in the ticket list.
+
 Show the user the exact plan text, any decision file text, and the ticket
-list (title, done line, tracker, what it waits on), and say that the map, if
-there is one, closes once the plan is linked. Wait for a yes; that one yes
-covers every step below. On changes, show it again.
+list (title, done and check lines, any run mode, tracker, what it waits on),
+and say that the map, if there is one, closes once the plan is linked. Wait
+for a yes; that one yes covers every step below. On changes, show it again.
 
 ## 3. Create, after the yes
 
@@ -83,12 +90,14 @@ covers every step below. On changes, show it again.
 2. **Work tickets, first pass**: create each in plan order (or move the
    existing ticket the user agreed to reuse) as a child of the
    plan's parent ticket (Link parent and child), with a title stating the
-   outcome, a description someone could pick up cold, a last line
-   `Done when: <the result anyone could check>`, and fields as New ticket
-   says. When Parent and children is empty, or the ticket belongs in the
-   secondary tracker, it carries a `Plan: <title and link>` line in its
-   description instead, and the plan's body lists it with its link
-   (Mechanics' Edit). Links, never copies.
+   outcome, a description someone could pick up cold, a line
+   `Done when: <the result anyone could check>`, then, when a machine can
+   check it, a last line
+   `Check: <the command or commands a machine runs; passing means done>`,
+   and fields as New ticket says. When Parent and children is empty, or
+   the ticket belongs in the secondary tracker, it carries a
+   `Plan: <title and link>` line in its description instead, and the
+   plan's body lists it with its link (Mechanics' Edit). Links, never copies.
 3. **Second pass, blocking**: link each ticket to what it waits on, using
    the real ids, as the Layout's Blocking says: the tracker's native blocking
    where it has one, else what Mechanics' Link blocking describes.

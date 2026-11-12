@@ -9,5 +9,6 @@ Turns a finished plan into tickets. The input is a settled decision map or a pla
 
 - Guard: while a map has open question tickets, the skill stops, lists them, and points back to the `wayfinder` skill.
 - Work tickets sit under the plan's parent ticket, never under the map, so the map's frontier query only ever returns question tickets.
+- Run mode: when the tracker doc gives tickets one, a ticket is marked unattended (an agent works it alone, with nobody watching) only if its `Check:` line, written on its own after `Done when:`, names a command, test, or script whose pass or fail a machine observes with no person judging. Every other ticket is marked for a person. The rule waits on the tracker doc because skills name no tracker and not every tracker records a run mode; the separate line lets a script or a worker find the check.
 - Linking the plan from the map body uses the Mechanics' Edit operation in the tracker templates.
 - The tracker doc lookup lives once in `references/tracker-lookup.md`, shared by every tracker-using skill; change it there, in step with "Trackers" in `references/conventions.md`.
