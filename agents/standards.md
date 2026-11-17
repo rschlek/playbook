@@ -98,8 +98,11 @@ touch, or the branch is behind, stop and report rather than stash or force.
   (`related`, `depends_on` with project, repo, artifact, and version, and
   `agents`), and `paused` or `archived`; `metadata` and any older `memory`
   field are the user's and left untouched. Propose replacing a leftover
-  `repo_role` or `repos`, and renaming `parked` to `paused`. Agent logic
-  never goes into a project's repository; it is linked as `links.agents`.
+  `repo_role` or `repos`, and renaming `parked` to `paused`. Agents that
+  tend a project from outside it never go into its repository; they are
+  linked as `links.agents`. Agent tooling the project ships for the people
+  and agents who work in it (contributor skills, a verifier that gates
+  merges, the hooks they rely on) belongs in the repository and is not a gap.
 - When no profile exists, the `setup-playbook-profile` skill's procedure creates it; the
   answers come in the brief, and any missing one goes under "needs the user".
 - Author in the working checkout under the projects root, never in a

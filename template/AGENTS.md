@@ -1,9 +1,9 @@
 # Agent guidance
 
-<!-- playbook:base start (1.0.1) -->
+<!-- playbook:base start (1.0.2) -->
 ## Working in this repo
 
-This repo follows the playbook standard, version 1.0.1
+This repo follows the playbook standard, version 1.0.2
 (https://github.com/rschlek/playbook). This block is replaced when the
 standard updates; put project-specific guidance in the section below it.
 

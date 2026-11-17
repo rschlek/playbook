@@ -2,6 +2,10 @@
 
 Changes to the rules in `conventions.md`, newest first.
 
+## 2026-11-17 (1.0.2)
+
+- The rule on agent logic, from 2026-11-03, is clarified: it read as covering any agent that works in a repository. Agents that tend a project from outside it (the definitions, prompts, memory and triggers of agents that own, maintain or operate it) never live in the project's repository; the project links the repository that holds them as `links.agents`. Agent tooling the project ships for the people and agents who work in it (contributor skills, a verifier that gates merges, the hooks they rely on) is part of the project and lives in its repository, and an audit does not report it as a gap. The `links.agents` field reads "the agents that tend the project from outside it". The base block and conventions copy move to 1.0.2.
+
 ## 2026-11-10 (1.0.1)
 
 - The `profile` skill is renamed `setup-playbook-profile`: it sets up playbook for the user (the profile and the tracker doc), once per machine, and is no longer confused with `new` or `adopt`. The profile file, its lookup, and `profile.example.yaml` keep their names. The standard references the new skill name, so the base block and conventions copy move to 1.0.1.
