@@ -1,0 +1,4 @@
+interface:
+  display_name: "Guide me"
+  short_description: "Say where the work stands, name the one skill that fits next, and start it on a yes"
+  default_prompt: "Guide me: where does this stand, and what should I do next?"

@@ -23,7 +23,7 @@ A local checkout works the same way: pass its folder to `marketplace add`. Start
 1. Invoke the `setup-playbook-profile` skill. It asks which tracker you use and sets up a tracker doc for it; that is all everyday work needs. No tracker yet? Choose `markdown`: tickets are files in a repository, and nothing else is needed.
 2. Everyday tickets (an errand, a chore, a one-off task) need no repository and no project: `capture` and `tackle` work with the tracker doc alone.
 3. When you start an initiative that produces something and has decisions worth recording, invoke `new` for it, or `adopt` in a repository you already have. Its records (decisions, glossary, research) live in that repository.
-4. Invoke `next` whenever you are unsure what to do: it says where things stand and which skill comes next.
+4. Invoke `guide-me` whenever you are unsure what to do, or just say "guide me": it says where things stand, names the skill that comes next, and starts it when you say yes.
 
 ## The flow in short
 
@@ -31,7 +31,7 @@ A local checkout works the same way: pass its folder to `marketplace add`. Start
 an idea -> grill-me (sharpen it) -> wayfinder (map it, only if foggy)
         -> to-tickets (plan and work tickets) -> tackle (do each one)
         -> close the parent
-at any time: capture a stray item, untangle when lost, next when unsure
+at any time: capture a stray item, untangle when lost, guide-me when unsure
 ```
 
 Work you already understand skips the map; a single small job is just `capture` and `tackle`. [docs/flow.md](docs/flow.md) walks the whole flow with a worked example, a table of every skill, and how to set up.
@@ -66,11 +66,11 @@ Set up a project:
 
 The work loop:
 
-- `wayfinder`: chart a large or foggy piece of work as a decision map in the tracker, one question ticket per open question, and resolve them one at a time. Started by the user only. When the last question is answered it asks whether to create the tickets now.
+- `wayfinder`: chart a large or foggy piece of work as a decision map in the tracker, one question ticket per open question, and resolve them one at a time. Started when the user asks for it or agrees to `guide-me`'s offer, never on the agent's own initiative. When the last question is answered it asks whether to create the tickets now.
 - `to-tickets`: turn a finished plan into a parent ticket holding the plan and the work tickets under it, in order, with blocking, then close the map. It shows everything first and creates nothing before the user's yes.
 - `capture`: add one well-formed ticket to the right tracker and place.
 - `tackle`: do a ticket the user names, or pick one worth doing now, and close it out honestly.
-- `next`: say where the project stands in the flow and which one skill to use next, changing nothing.
+- `guide-me`: say where the work stands in the flow, name the one skill that fits next, and start it on the user's yes; it changes nothing itself.
 
 Thinking:
 

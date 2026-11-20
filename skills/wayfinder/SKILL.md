@@ -6,12 +6,12 @@ description: >-
   destination, one child ticket per open question), then work its questions one
   at a time until the way to the destination is clear. Works for any kind of
   project: software, a compliance process, research, a personal project. Use
-  only when the user invokes it: "wayfinder", "chart a map for X", "make a
+  when the user asks for it ("wayfinder", "chart a map for X", "make a
   decision map", "map out this idea", "work the map", "take the next question
-  on the map". Do NOT use to stress-test a plan in one sitting (that is
-  grill-me), to turn a finished map into work tickets (that is to-tickets), to
-  do a ticket (that is tackle), or to add one ticket (that is capture).
-disable-model-invocation: true
+  on the map"), or agrees when the guide-me skill offers it. Do NOT use to
+  stress-test a plan in one sitting (that is grill-me), to turn a finished map
+  into work tickets (that is to-tickets), to do a ticket (that is tackle), or
+  to add one ticket (that is capture).
 ---
 
 # Wayfinder
@@ -22,6 +22,7 @@ The destination varies: a spec to hand off, a choice to lock before planning, a 
 
 ## Rules
 
+- **Started on the user's yes.** Never start this skill on your own initiative: charting creates tickets and commits an effort to several sessions. When you think a map is needed, offer it and wait for the user's yes.
 - **Plan, don't do.** Each ticket resolves a decision; the map is done when nothing is left to decide. The pull to just do the work is the sign you have reached the map's edge. When no open question is left, hand off as "Check the end" says; the `to-tickets` skill writes the plan and the work tickets. Never create work tickets here.
 - **Refer by name.** In everything the user reads, call a map or ticket by its title, never by a bare id or number. The link rides inside the name.
 - **One ticket resolved per session**, research tickets excepted.
@@ -49,7 +50,7 @@ The user invokes this with a loose idea.
 The user invokes this with a map (its name or link). A ticket is optional: without one, you pick the next question, not the user.
 
 1. **Load the map**: its body, the low-resolution view. Do not read every ticket.
-2. **Choose the ticket.** Use the one the user named. Otherwise run the Frontier query and take the first result. **Claim it** before any work.
+2. **Choose the ticket.** Use the one the user named. Otherwise run the Frontier query and take the first result. **Claim it** before any work. Then tell the user in one plain sentence which question you took, by its title, and what it decides; do not summarize the map or the ticket. Starting was already agreed, so do not ask again whether to begin: for a ticket worked with the user, ask the first question in that same reply. Ask it in plain words: one idea, what changes either way, your recommended answer, and how to answer in a word; explain a term the user has not met, or drop it.
 3. **Resolve it as its type** (see `MAP.md`), read from its type marker, not its body. Zoom as needed: fetch any related or closed ticket in full on demand. When the map's Notes name skills of this plugin, offer them and invoke one on the user's yes; ignore any other skill they name. If in doubt, invoke the `grill-me` skill and the `glossary` skill.
 4. **Record the answer** by what it is (see `MAP.md`):
    - **A choice**, something that could have gone another way: write `docs/decisions/YYYY-MM-DD-<short-name>.md` in the shape `MAP.md` gives (what was decided, the options considered, the facts and figures that settled it, what it replaces), and add `Replaced by: <new file name>` to any earlier decision it replaces.

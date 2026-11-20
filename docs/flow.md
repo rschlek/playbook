@@ -17,7 +17,7 @@ an idea
 
 at any time:  capture  a stray item becomes one ticket
               untangle when you are lost in a pile of findings or options
-              next     when you are not sure which step you are on
+              guide-me when you are not sure which step you are on
 ```
 
 Skip what you do not need:
@@ -97,7 +97,7 @@ Over a few evenings they `tackle` one at a time. The receipts ticket stops partw
 | `to-tickets` | A plan is settled and needs to become work | Questions are still open on the map (`wayfinder`) | A parent ticket holding the plan, work tickets under it with blocking |
 | `capture` | One new thing needs to be a ticket | A whole plan (`to-tickets`) | One well-formed ticket in the right place |
 | `tackle` | Doing a ticket, or asking what to work on | Adding a ticket (`capture`) | The work done, and the ticket closed, noted, or marked blocked |
-| `next` | Unsure which step the project is on or which skill comes next | Choosing a specific ticket (`tackle`) | Nothing: it only looks and points |
+| `guide-me` | Unsure which step the project is on, which skill comes next, or where to start | Choosing a specific ticket (`tackle`) | Nothing of its own: it looks, points, and starts the skill that fits on your yes |
 | **Thinking** | | | |
 | `grill-me` | Testing a plan or sharpening an idea by being questioned | You are lost in the agent's findings (`untangle`) | A shared understanding; decisions are recorded by the skill that called it |
 | `research` | A decision waits on facts from outside the project | Deciding with the user (`grill-me`) | A dated, cited document under `docs/` |
@@ -109,4 +109,4 @@ Over a few evenings they `tackle` one at a time. The receipts ticket stops partw
 
 - **Once per machine:** run `setup-playbook-profile`. For everyday tickets it needs only your tracker; it asks for your projects folder and scopes when you first start a project.
 - **Once per tracker kind:** the tracker setup inside the `setup-playbook-profile` skill (or `new` or `adopt` for a project with its own) writes a tracker doc from a shipped template. With no tracker yet, pick `markdown`: tickets become files in the project's repository. It proposes the steps, runs the query for pickable work so you can see what would be offered, and creates nothing in the tracker without your yes.
-- **Once per project:** only for an initiative with records to keep, `new` for fresh work or `adopt` for a repository that already exists. After that, `next` tells you where you are.
+- **Once per project:** only for an initiative with records to keep, `new` for fresh work or `adopt` for a repository that already exists. After that, `guide-me` tells you where you are and offers the next step.

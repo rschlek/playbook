@@ -13,7 +13,7 @@ description: >-
   remember my open decisions". Also use unprompted when a reply would hand
   the user more than three open decisions at once. Do NOT use for
   stress-testing a plan the user already has (that is grill-me), for asking
-  where the project stands or which skill comes next (that is next), or for
+  where the project stands or which skill comes next (that is guide-me), or for
   editing the work itself to make it simpler.
 ---
 
@@ -79,8 +79,8 @@ arrived as a pile. Hand it back as decisions they can answer in a word.
 - Status requests about the pile in this conversation ("where do we stand on
   these") are steps 2, 3 and 8 without the walk: the picture, the three
   buckets, and one closing question. Start the walk only if the user wants to
-  settle the open ones now. Where the project as a whole stands is the `next`
-  skill.
+  settle the open ones now. Where the project as a whole stands is the
+  `guide-me` skill.
 - When nothing is waiting to be decided, steps 1 and 2 are the whole job:
   the plain picture, then follow the user's questions, making it smaller
   (step 7) when it does not land. Change nothing.

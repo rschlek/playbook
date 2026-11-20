@@ -2,6 +2,10 @@
 
 Changes to the rules in `conventions.md`, newest first.
 
+## 2026-11-19 (1.0.3)
+
+- The `next` skill is renamed `guide-me`. It still looks without changing anything and names the one skill that fits, and now starts that skill on the user's yes. The base block names `guide-me` in the flow of work, so the base block and conventions copy move to 1.0.3. The `wayfinder` skill can now be started by the agent when the user asks for it in plain words or says yes to `guide-me`'s offer, never on the agent's own initiative. An adopted repository picks up the new name at its next sync; until then its base block names `next`, a skill that no longer exists under that name.
+
 ## 2026-11-17 (1.0.2)
 
 - The rule on agent logic, from 2026-11-03, is clarified: it read as covering any agent that works in a repository. Agents that tend a project from outside it (the definitions, prompts, memory and triggers of agents that own, maintain or operate it) never live in the project's repository; the project links the repository that holds them as `links.agents`. Agent tooling the project ships for the people and agents who work in it (contributor skills, a verifier that gates merges, the hooks they rely on) is part of the project and lives in its repository, and an audit does not report it as a gap. The `links.agents` field reads "the agents that tend the project from outside it". The base block and conventions copy move to 1.0.2.
