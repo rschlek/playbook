@@ -2,6 +2,8 @@
 
 Question: Is define its own skill or a mode of grill-me?
 
+Replaced in part by: 2026-11-20-define-ends-with-a-problem-brief.md. `define` lays out no options and records no pick; it ends with a problem brief.
+
 The problem-definition step is a skill of its own, named `define`. It is not a mode of `grill-me`. The two interview one question at a time and point in opposite directions.
 
 ## What was decided
