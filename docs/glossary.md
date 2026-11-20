@@ -1,6 +1,6 @@
 # Playbook
 
-The words playbook uses for where a project's tickets live and how one person's own list relates to them.
+The words playbook uses for where a project's tickets live, how one person's own list relates to them, and the documents its skills write.
 
 ## Language
 
@@ -19,3 +19,7 @@ _Avoid_: Personal board, private tracker, personal layer, extension
 **Link**:
 The pointer a personal item carries to one ticket in the project tracker. It lives only on the personal side, and several personal items may carry a link to the same ticket.
 _Avoid_: Mirror, copy, sync pair
+
+**Problem definition**:
+A written account of a problem, made before any way of solving it is chosen: what the problem is, who has it, what it costs, what solved looks like, and what is still unknown. It holds no solution.
+_Avoid_: Problem brief, problem statement, requirements document
