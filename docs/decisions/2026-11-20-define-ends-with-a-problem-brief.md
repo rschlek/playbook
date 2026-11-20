@@ -2,6 +2,8 @@
 
 Question: How does a define interview go, from a stated want to a picked option?
 
+Replaced in part by: 2026-11-20-problem-definition-is-a-file-in-the-project.md. The document is called a problem definition.
+
 It does not end in a picked option. `define` is an open interview that gets to the root of a problem and ends with a written problem brief. Ways to solve the problem are found in a later step.
 
 ## What was decided
