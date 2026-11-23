@@ -2,6 +2,8 @@
 
 Question: How does a person set up a personal tracker: in the existing setup skill or one of its own, and what do they define for themselves?
 
+Replaced in part by: 2026-11-22-a-tracker-doc-never-requires-the-tracker-to-change.md. Setup does not walk the person through connecting a tool; it says what it cannot reach and checks afterwards.
+
 In the existing setup skill. Setup opens by asking the person how they keep track of their work, in plain words, and what it learns sets up their personal tracker. A project tracker is not set up there: it is defined in each project.
 
 ## What was decided
