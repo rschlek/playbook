@@ -25,6 +25,7 @@ From inside a repository, lookup finds the project tracker and, for a person who
 7. A ticket held by someone else. A skill writes nothing to a project ticket that is assigned to another person. It says who holds it.
 8. A person with no personal tracker. Lookup finds one tracker, and every skill reads and writes it exactly as before this decision.
 9. A repository someone else owns, or a team that does not use playbook. The project tracker comes from the project's entry in the profile. Skills write there only to tickets that are the person's, in words a person would write. What planning goes there is what that tracker's doc says.
+10. A split project tracker. Everything said here about the project tracker holds for each part of a split one. A ticket goes to the part that holds its kind, a link may point into any part, and the read before picking makes one batch for each part.
 
 ## Options considered
 
