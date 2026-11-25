@@ -2,6 +2,8 @@
 
 Question: What does keeping a linked pair in step look like when it is built into the work loop?
 
+Replaced in part by: 2026-11-25-the-tracker-work-is-built-in-two-releases.md. Starting an unassigned project ticket through `tackle` assigns it and adds the linked personal item.
+
 A personal item and the project ticket it links move together through the skills a person already uses. There is no skill for it. The skills compare what the linked items say now with what the project ticket says now, and offer the difference. The walk-through also settled where planning lives when a person has a personal tracker.
 
 ## What was decided

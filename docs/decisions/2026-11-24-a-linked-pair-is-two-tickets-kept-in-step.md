@@ -2,6 +2,8 @@
 
 Question: How does the rule that lets a linked pair move together read in the conventions?
 
+Replaced in part by: 2026-11-25-the-tracker-work-is-built-in-two-releases.md. The standard version moves at each of the two releases, not once.
+
 The sentence "Every ticket lives in exactly one tracker, and its status lives only there" stays as it is. A personal item and the project ticket it links are two tickets, each with its own status. One new rule in "Trackers" says how the pair is kept in step. The standard version moves with the release that carries it.
 
 ## What was decided

@@ -2,6 +2,8 @@
 
 Question: From inside a repository, how does tracker lookup find both trackers, and which one does each skill read and write?
 
+Replaced in part by: 2026-11-25-the-tracker-work-is-built-in-two-releases.md. A project's personal items include any linked to its tickets, and `capture` searches the tracker the new ticket goes to for a duplicate.
+
 From inside a repository, lookup finds the project tracker and, for a person who has one, the personal tracker. Work someone else could pick up goes in the project tracker. A person's own breakdown of a ticket they hold goes in the personal tracker, linked to that ticket. Picking work starts from the personal tracker and checks the project tickets behind its linked items before it offers anything.
 
 ## What was decided

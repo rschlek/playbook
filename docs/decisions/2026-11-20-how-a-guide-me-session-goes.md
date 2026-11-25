@@ -6,6 +6,8 @@ Replaced in part by: 2026-11-24-define-is-offered-whenever-the-problem-is-not-wr
 
 Replaced in part by: 2026-11-25-define-is-parked-and-guide-me-does-not-offer-it.md. `guide-me` does not offer `define`: a loose want leads to `grill-me`, as in point 4.
 
+Replaced in part by: 2026-11-25-the-tracker-work-is-built-in-two-releases.md. The look adds one search of the personal tracker and one batch read per part of the project tracker.
+
 `guide-me` looks without changing anything, says in about five lines where the work stands, names the one skill that fits, and asks a yes-or-no question. Version 1.0.3 ships this. Five changes follow from decisions made since.
 
 ## What was decided

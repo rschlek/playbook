@@ -2,6 +2,8 @@
 
 Question: How does a project point at the project that holds its tracker doc, and where does a person record that when the project's shared files cannot?
 
+Replaced in part by: 2026-11-25-the-tracker-work-is-built-in-two-releases.md. A team that does not use playbook has its tracker doc beside the profile, named for the tracker entry, and the check that a checkout is behind its remote may fetch.
+
 A project tracker's doc is a file in a repository the team shares. A project that does not hold the doc names the project that does, in one line of its `project.yaml`. When the project's shared files cannot carry that line, the person's profile carries it. The doc is read from the named project's checkout and never copied.
 
 ## What was decided
