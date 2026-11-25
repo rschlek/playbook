@@ -22,23 +22,24 @@ A local checkout works the same way: pass its folder to `marketplace add`. Start
 
 1. Invoke the `setup-playbook-profile` skill. It asks which tracker you use and sets up a tracker doc for it; that is all everyday work needs. No tracker yet? Choose `markdown`: tickets are files in a repository, and nothing else is needed.
 2. Everyday tickets (an errand, a chore, a one-off task) need no repository and no project: `capture` and `tackle` work with the tracker doc alone.
-3. When you start an initiative that produces something and has decisions worth recording, invoke `new` for it, or `adopt` in a repository you already have. Its records (decisions, glossary, research) live in that repository.
+3. When you start an initiative that produces something and has decisions worth recording, invoke `new` for it, or `adopt` in a repository you already have. Its records (problem definitions, decisions, glossary, research) live in that repository.
 4. Invoke `guide-me` whenever you are unsure what to do, or just say "guide me": it says where things stand, names the skill that comes next, and starts it when you say yes.
 
 ## The flow in short
 
 ```
-an idea -> grill-me (sharpen it) -> wayfinder (map it, only if foggy)
+an idea -> define (write down the problem) -> grill-me (sharpen it)
+        -> wayfinder (map it, only if foggy)
         -> to-tickets (plan and work tickets) -> tackle (do each one)
         -> close the parent
 at any time: capture a stray item, untangle when lost, guide-me when unsure
 ```
 
-Work you already understand skips the map; a single small job is just `capture` and `tackle`. [docs/flow.md](docs/flow.md) walks the whole flow with a worked example, a table of every skill, and how to set up.
+`define` is offered, never required: a problem already written down skips it. Work you already understand skips the map; a single small job is just `capture` and `tackle`. [docs/flow.md](docs/flow.md) walks the whole flow with a worked example, a table of every skill, and how to set up.
 
 A project keeps three things apart (a standalone ticket lives only in the tracker):
 
-- **The repository** holds the work itself and the project's own context: its documents, its decisions (one file each), and its research.
+- **The repository** holds the work itself and the project's own context: its documents, its problem definitions, its decisions (one file each), and its research.
 - **The tracker** holds the items of work, including the plan for a piece of work, which lives in the parent ticket. A **tracker doc** tells an agent how to read and write tickets in that tracker and what each step of the loop means there.
 - **Agent memory** is outside this plugin's scope.
 
@@ -74,6 +75,7 @@ The work loop:
 
 Thinking:
 
+- `define`: get to the root of a problem by being asked about it, one plain question at a time, and write it down as a problem definition in `docs/problems/`, with no solution in it. For a loose want and for an idea already in mind alike. Started when the user asks for it or agrees to `guide-me`'s offer, never on the agent's own initiative.
 - `grill-me`: stress-test a plan by being asked about it, one question at a time.
 - `glossary`: pin down the project's words in its glossary, and record a hard-to-reverse decision when one comes up.
 - `research`: investigate one question from primary sources and write the findings, cited, as a dated document under `docs/`.

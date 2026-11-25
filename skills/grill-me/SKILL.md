@@ -10,7 +10,8 @@ description: >-
   NOT use for explaining something plainly or handing the agent's own pile
   back to the user as small decisions (that is untangle), for keeping the
   project's glossary (that is glossary, which this skill calls when a word
-  is used two ways), or for charting work too big for one session (that is
+  is used two ways), for writing down the problem before there is a plan
+  (that is define), or for charting work too big for one session (that is
   wayfinder).
 ---
 

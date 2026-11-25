@@ -1,0 +1,4 @@
+interface:
+  display_name: "Define"
+  short_description: "Find the root of a problem by interview and write it down as a problem definition"
+  default_prompt: "Let's define the problem we are trying to solve."

@@ -15,7 +15,7 @@ Each skill is a folder `skills/<name>/` holding:
 
 - `SKILL.md`: frontmatter `name` equal to the folder name, and a `description` rich in the phrases a user says, which also says what the skill is NOT for, pointing at sibling skills by bare name. Keep the body under about 100 lines; move detail into a file beside it.
 - `README.md`: what the skill is, its source and credit when it was adapted, and maintainer notes.
-- `agents/openai.yaml`: Codex metadata, an `interface` with `display_name`, `short_description`, and optionally `default_prompt`. A skill only the user may start sets `policy.allow_implicit_invocation: false` there and `disable-model-invocation: true` in its frontmatter.
+- `agents/openai.yaml`: Codex metadata, an `interface` with `display_name`, `short_description`, and optionally `default_prompt`. A skill only the user may start sets `policy.allow_implicit_invocation: false` there and `disable-model-invocation: true` in its frontmatter. A skill that changes things and may be offered by another skill carries a "started on the user's yes" rule in its body, and none of the settings for a skill only the user may start.
 
 Every skill works in both harnesses from the same `SKILL.md`:
 
