@@ -2,6 +2,8 @@
 
 Question: When is `define` the step that fits, and does it look at ways to solve the problem?
 
+Replaced in part by: 2026-11-25-define-is-parked-and-guide-me-does-not-offer-it.md. `guide-me` does not offer `define`, and `define` starts only when the user asks for it.
+
 `define` is the step for writing down the problem, whoever arrives: a person with a loose want, or a person with a specific way of solving it already in mind. It ends at the problem and looks at no ways to solve it.
 
 ## What was decided

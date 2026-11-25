@@ -4,6 +4,8 @@ Question: How does a guide-me session go: what it looks at, the one sentence it 
 
 Replaced in part by: 2026-11-24-define-is-offered-whenever-the-problem-is-not-written-down.md. `define` is offered whenever new work has no problem definition, not only for a loose want.
 
+Replaced in part by: 2026-11-25-define-is-parked-and-guide-me-does-not-offer-it.md. `guide-me` does not offer `define`: a loose want leads to `grill-me`, as in point 4.
+
 `guide-me` looks without changing anything, says in about five lines where the work stands, names the one skill that fits, and asks a yes-or-no question. Version 1.0.3 ships this. Five changes follow from decisions made since.
 
 ## What was decided
