@@ -4,6 +4,8 @@ Question: How does a person set up a personal tracker: in the existing setup ski
 
 Replaced in part by: 2026-11-22-a-tracker-doc-never-requires-the-tracker-to-change.md. Setup does not walk the person through connecting a tool; it says what it cannot reach and checks afterwards.
 
+Replaced in part by: 2026-11-25-a-personal-list-is-optional-and-can-live-in-a-private-project.md. Setup offers a list only when the person wants one, kept in a private project when they have no to-do tool.
+
 In the existing setup skill. Setup opens by asking the person how they keep track of their work, in plain words, and what it learns sets up their personal tracker. A project tracker is not set up there: it is defined in each project.
 
 ## What was decided
