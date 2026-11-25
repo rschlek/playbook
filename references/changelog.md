@@ -2,6 +2,10 @@
 
 Changes to the rules in `conventions.md`, newest first.
 
+## 2026-11-25 (1.0.5)
+
+- `guide-me` no longer offers `define` and goes back to its 1.0.3 ladder: a loose want with no map and no plan leads to `grill-me`, then `wayfinder` or `to-tickets`, and it no longer looks in `docs/problems/`. The `define` skill stays in the plugin, available when the user asks to write the problem down, by name or in plain words. The base block and `conventions.md` are unchanged, so the standard version stays 1.0.3 and adopted repositories need no sync.
+
 ## 2026-11-24 (1.0.4)
 
 - A new skill, `define`, gets to the root of a problem by interview and writes it down as a problem definition, `docs/problems/YYYY-MM-DD-<short-name>.md`, with a status line (draft or settled): what the problem is, who has it, what it costs, what solved looks like, and what is still unknown. It holds no solution, lays out no options, and records no pick. It is started on the user's yes, by a rule in its body. `guide-me` now offers `define` first whenever new work has no problem definition, whether the user has a loose want or a specific build in mind, and a skip moves to the next row as before; a loose want no longer leads to `grill-me`, which stays the skill for testing a plan. The repository's authoring rules now say that a skill that changes things and may be offered by another skill carries a "started on the user's yes" rule and none of the settings for a skill only the user may start. The base block and `conventions.md` are unchanged, so the standard version stays 1.0.3 and adopted repositories need no sync.
