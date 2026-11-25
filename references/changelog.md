@@ -2,6 +2,10 @@
 
 Changes to the rules in `conventions.md`, newest first.
 
+## 2026-11-24 (1.0.4)
+
+- A new skill, `define`, gets to the root of a problem by interview and writes it down as a problem definition, `docs/problems/YYYY-MM-DD-<short-name>.md`, with a status line (draft or settled): what the problem is, who has it, what it costs, what solved looks like, and what is still unknown. It holds no solution, lays out no options, and records no pick. It is started on the user's yes, by a rule in its body. `guide-me` now offers `define` first whenever new work has no problem definition, whether the user has a loose want or a specific build in mind, and a skip moves to the next row as before; a loose want no longer leads to `grill-me`, which stays the skill for testing a plan. The repository's authoring rules now say that a skill that changes things and may be offered by another skill carries a "started on the user's yes" rule and none of the settings for a skill only the user may start. The base block and `conventions.md` are unchanged, so the standard version stays 1.0.3 and adopted repositories need no sync.
+
 ## 2026-11-19 (1.0.3)
 
 - The `next` skill is renamed `guide-me`. It still looks without changing anything and names the one skill that fits, and now starts that skill on the user's yes. The base block names `guide-me` in the flow of work, so the base block and conventions copy move to 1.0.3. The `wayfinder` skill can now be started by the agent when the user asks for it in plain words or says yes to `guide-me`'s offer, never on the agent's own initiative. An adopted repository picks up the new name at its next sync; until then its base block names `next`, a skill that no longer exists under that name.
