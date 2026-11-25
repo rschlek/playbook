@@ -28,14 +28,13 @@ A local checkout works the same way: pass its folder to `marketplace add`. Start
 ## The flow in short
 
 ```
-an idea -> define (write down the problem) -> grill-me (sharpen it)
-        -> wayfinder (map it, only if foggy)
+an idea -> grill-me (sharpen it) -> wayfinder (map it, only if foggy)
         -> to-tickets (plan and work tickets) -> tackle (do each one)
         -> close the parent
 at any time: capture a stray item, untangle when lost, guide-me when unsure
 ```
 
-`define` is offered, never required: a problem already written down skips it. Work you already understand skips the map; a single small job is just `capture` and `tackle`. [docs/flow.md](docs/flow.md) walks the whole flow with a worked example, a table of every skill, and how to set up.
+Work you already understand skips the map; a single small job is just `capture` and `tackle`. [docs/flow.md](docs/flow.md) walks the whole flow with a worked example, a table of every skill, and how to set up.
 
 A project keeps three things apart (a standalone ticket lives only in the tracker):
 
@@ -75,7 +74,7 @@ The work loop:
 
 Thinking:
 
-- `define`: get to the root of a problem by being asked about it, one plain question at a time, and write it down as a problem definition in `docs/problems/`, with no solution in it. For a loose want and for an idea already in mind alike. Started when the user asks for it or agrees to `guide-me`'s offer, never on the agent's own initiative.
+- `define`: get to the root of a problem by being asked about it, one plain question at a time, and write it down as a problem definition in `docs/problems/`, with no solution in it. For a loose want and for an idea already in mind alike. Available when the user asks to write the problem down, never started on the agent's own initiative.
 - `grill-me`: stress-test a plan by being asked about it, one question at a time.
 - `glossary`: pin down the project's words in its glossary, and record a hard-to-reverse decision when one comes up.
 - `research`: investigate one question from primary sources and write the findings, cited, as a dated document under `docs/`.

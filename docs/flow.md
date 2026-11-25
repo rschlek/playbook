@@ -6,8 +6,6 @@ This page is for anyone opening the playbook plugin for the first time, whether 
 
 ```
 an idea
-  -> define        write down the problem: who has it, what it costs, what
-                   solved looks like, what is still unknown; no solution yet
   -> grill-me      sharpen it until you can say where it ends
   -> wayfinder     only if it is still foggy: a map ticket, one child ticket
                    per open question, answered with research, prototype,
@@ -24,7 +22,6 @@ at any time:  capture  a stray item becomes one ticket
 
 Skip what you do not need:
 
-- `define` is offered for new work, never required. A problem already written down skips it, and so does anyone who says skip.
 - Work you already understand skips `wayfinder`: go straight to `to-tickets`.
 - A single small job skips the plan too: `capture` it, then `tackle` it. It needs no project or repository, and it closes with an ordinary closing note.
 - An idea that is already sharp skips `grill-me`.
@@ -102,7 +99,7 @@ Over a few evenings they `tackle` one at a time. The receipts ticket stops partw
 | `tackle` | Doing a ticket, or asking what to work on | Adding a ticket (`capture`) | The work done, and the ticket closed, noted, or marked blocked |
 | `guide-me` | Unsure which step the project is on, which skill comes next, or where to start | Choosing a specific ticket (`tackle`) | Nothing of its own: it looks, points, and starts the skill that fits on your yes |
 | **Thinking** | | | |
-| `define` | Starting new work: writing down the problem before choosing a way to solve it, whether you have a loose want or an idea already in mind | Testing a plan you already have (`grill-me`) | A problem definition in `docs/problems/`, a draft with its open questions or settled |
+| `define` | You ask to write down the problem before choosing a way to solve it, whether you have a loose want or an idea already in mind | Testing a plan you already have (`grill-me`) | A problem definition in `docs/problems/`, a draft with its open questions or settled |
 | `grill-me` | Testing a plan or sharpening an idea by being questioned | You are lost in the agent's findings (`untangle`) | A shared understanding; decisions are recorded by the skill that called it |
 | `research` | A decision waits on facts from outside the project | Deciding with the user (`grill-me`) | A dated, cited document under `docs/` |
 | `prototype` | Seeing a rough version would settle a design question | Building the real thing (`tackle`) | A decision file; the throwaway is deleted or kept by choice |

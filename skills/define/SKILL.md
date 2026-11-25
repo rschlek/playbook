@@ -7,13 +7,11 @@ description: >-
   is still unknown, with no solution in it. For anyone starting new work:
   someone with a loose want, and someone who already has a way of solving it
   in mind. Works for any kind of work. Use when the user says "define the
-  problem", "let's define the problem we are trying to solve", "what is the real
-  problem here", "write down the problem", "I want something but I'm not
-  sure what", "I don't know what I need yet", "should we build this", or "is
-  this worth doing", or agrees when the guide-me skill offers it. Do NOT use
-  to test a plan the user already has (that is grill-me), to gather facts
-  from sources (that is research), to chart work too big for one session
-  (that is wayfinder), or to lay out or choose ways of solving a problem.
+  problem", "let's define the problem we are trying to solve", or "write
+  down the problem". Do NOT use to test a plan the user already has (that is
+  grill-me), to gather facts from sources (that is research), to chart work
+  too big for one session (that is wayfinder), or to lay out or choose ways
+  of solving a problem.
 ---
 
 # Define

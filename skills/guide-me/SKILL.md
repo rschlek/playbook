@@ -3,16 +3,16 @@ name: guide-me
 description: >-
   Say where the current work stands in the playbook flow, name the one skill
   that fits next and why, and on the user's yes start it. It looks without
-  changing anything: the tracker doc, project.yaml when there is one, the
-  project's problem definitions, any decision map and its open question
-  tickets, any plan's parent ticket and its open work tickets, and what is
-  started or blocked. Use when the user says "guide me", "where are we",
-  "what's next", "what should I do next", "where does this project stand",
-  "which skill do I use", "I'm not sure what to do", "where do I start", "I
-  have an idea and don't know where to begin", or "I want to start something
-  new". Do NOT use to pick a specific ticket to do (that is tackle), to walk
-  the user through decisions in plain language (that is untangle), or to set
-  anything up itself (that is setup-playbook-profile, new, or adopt).
+  changing anything: the tracker doc, project.yaml when there is one, any
+  decision map and its open question tickets, any plan's parent ticket and
+  its open work tickets, and what is started or blocked. Use when the user
+  says "guide me", "where are we", "what's next", "what should I do next",
+  "where does this project stand", "which skill do I use", "I'm not sure what
+  to do", "where do I start", "I have an idea and don't know where to
+  begin", or "I want to start something new". Do NOT use to pick a specific
+  ticket to do (that is tackle), to walk the user through decisions in plain
+  language (that is untangle), or to set anything up itself (that is
+  setup-playbook-profile, new, or adopt).
 ---
 
 # Guide me
@@ -79,12 +79,8 @@ Walk this ladder top to bottom and take the first row that fits:
 1. No tracker doc or profile yet: `setup-playbook-profile`. When the user
    is starting something that needs a project and has none: `new`, or
    `adopt` for a repository that already exists.
-2. New work, with no map and no plan yet, and no problem definition for
-   it: `define`, to write the problem down first, whether the user has a
-   loose want or a specific build in mind. To know whether one exists,
-   list the project's `docs/problems/` folder once and no more; with no
-   project there is none. It is offered, never forced: on a skip, take the
-   next row that fits.
+2. A loose want with no map and no plan: `grill-me` to sharpen it, then
+   `wayfinder` if it stays foggy or `to-tickets` if it is clear.
 3. The way is unclear and too big for one session: `wayfinder`, to chart
    a map.
 4. A map with open question tickets: `wayfinder`, to take the next
