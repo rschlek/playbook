@@ -2,6 +2,8 @@
 
 Question: How does a guide-me session go: what it looks at, the one sentence it says, and what it does on yes, on skip, and when nothing fits?
 
+Replaced in part by: 2026-11-24-define-is-offered-whenever-the-problem-is-not-written-down.md. `define` is offered whenever new work has no problem definition, not only for a loose want.
+
 `guide-me` looks without changing anything, says in about five lines where the work stands, names the one skill that fits, and asks a yes-or-no question. Version 1.0.3 ships this. Five changes follow from decisions made since.
 
 ## What was decided
