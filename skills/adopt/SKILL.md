@@ -73,6 +73,13 @@ folder, two levels above this skill's folder.
    layout differs from the user's default; otherwise make sure the user's
    doc for its kind exists. An existing tracker doc is a starting point:
    propose carrying its content over, and leave the old file as it is.
+   Before writing a doc, ask in plain words whether another project already
+   holds the description of this tracker (its `docs/tracker.md`, the file
+   that tells agents how to read and write its tickets). On a yes, point at
+   it with `doc` on the tracker entry and write no doc. In a repo someone
+   else owns, write nothing in the repository: the pointer, or else a doc
+   named for the tracker entry (`trackers/<name>.md`), goes beside the
+   profile, on the project's entry there, as the setup reference says.
 9. If the profile's worktrees folder or `project.local.yaml` is not
    ignored, add the ignore line: in `.gitignore` in the user's own repo, in
    the local exclude file in a shared repo. In a repo someone else owns,
@@ -84,17 +91,21 @@ folder, two levels above this skill's folder.
 11. Report the gaps against the standard: no remote, a name off the naming
     rule, a repo not directly under the projects root or nested in another,
     committed credentials, or, in a public repo, no license or an unwanted
-    commit identity. Report `docs/plan/` files or a single
-    `docs/decisions.md` as history that stays; never rename, move, or
-    convert documents. Say which files were added or updated and their fate:
-    uncommitted in the user's own repo; uncommitted for review, with only
-    fields true for everyone, in a shared repo the user leads; excluded and
-    never committed in a repo someone else owns.
+    commit identity. A shared project whose tracker entry names `doc`
+    carries no `docs/tracker.md`, and that is not a gap. Report `docs/plan/`
+    files or a single `docs/decisions.md` as history that stays; never
+    rename, move, or convert documents. Say which files were added or
+    updated and their fate: uncommitted in the user's own repo; uncommitted
+    for review, with only fields true for everyone, in a shared repo the
+    user leads; excluded and never committed in a repo someone else owns;
+    and a pointer or doc written beside the profile.
 
 ## Notes
 
 - Change nothing beyond adding files, the base block, the conventions copy,
-  the tracker doc, `tracking`, and ignore lines unless the user agrees.
+  the tracker doc, `tracking` (on the project's entry in the profile, for a
+  repo someone else owns whose doc is elsewhere), and ignore lines unless
+  the user agrees.
 - Never move or rename the repository, or change its visibility. Added
   files follow the repo's own line-ending and formatting rules. In a shared
   repo, ignore lines go in the local exclude file, never `.gitignore`.

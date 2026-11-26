@@ -2,7 +2,8 @@
 # your answers; or copy this, fill in real values, and point the skills at the copy
 # (environment variable PLAYBOOK_PROFILE, or a one-line ~/.playbook file holding
 # the path; the older PROJECT_GUIDE_PROFILE and ~/.project-guide still work).
-# The user's tracker docs sit beside this file, in trackers/<kind>.md.
+# The user's tracker docs sit beside this file, in trackers/<kind>.md, and in
+# trackers/<name>.md for a tracker entry that carries a name.
 
 projects_root: ~/projects          # flat folder holding every project
 worktrees_dir: .claude/worktrees   # where worktrees nest inside a project
@@ -30,6 +31,19 @@ scopes:
 tracker:                           # the default tracker, for a project that declares none
   kind: example-tracker            # a kind with a tracker doc at trackers/<kind>.md beside this file
   url: https://tracker.example.com/browse/{key}
+  projects:                        # optional, keyed by project slug
+    example-upstream:              # a repo someone else owns, whose own files cannot say where its tracker doc is
+      tracking:                    # same shape as in project.yaml; read only when the project's project.yaml has no tracking
+        primary:
+          kind: example-tracker
+          ref: UPSTREAM            # this project's location in that tracker
+          name: example-team       # its doc is trackers/example-team.md beside this file
+    example-upstream-tool:         # a repo someone else owns, whose team keeps its tracker doc in another project
+      tracking:
+        primary:
+          kind: example-tracker
+          ref: TOOL
+          doc: example-handbook    # the project whose docs/tracker.md describes this tracker
 
 metadata:                          # optional, free-form: anything your own tooling wants; the plugin never reads it
   review-cycle: quarterly

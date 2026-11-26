@@ -24,8 +24,12 @@ log dump.
 - Read first, in this order: `references/conventions.md` (the rules), the
   profile (`PLAYBOOK_PROFILE`, else the path in `~/.playbook`, else the older
   `PROJECT_GUIDE_PROFILE` or `~/.project-guide`), then each target repo's
-  `project.yaml`, `README.md`, `AGENTS.md`, and `docs/tracker.md` when
-  present. A repo's own `AGENTS.md` hard rules win over your defaults.
+  `project.yaml`, `README.md`, `AGENTS.md`, and its tracker doc:
+  `docs/tracker.md` when present, else the doc its `tracking` entry points
+  at with `doc` or `name`, in the order `references/tracker-lookup.md`
+  gives. A shared project that points at a doc carries no
+  `docs/tracker.md`; that is not a gap. A repo's own `AGENTS.md` hard rules
+  win over your defaults.
 
 ## Gates: the test is reversibility
 

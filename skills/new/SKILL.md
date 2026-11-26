@@ -55,7 +55,13 @@ folder, two levels above this skill's folder.
 7. Set up the tracker by following `references/tracker-setup.md`: write
    `docs/tracker.md` when the project is shared or its tracker or layout
    differs from the user's default; otherwise make sure the user's doc for
-   its kind exists.
+   its kind exists. Before writing `docs/tracker.md`, ask in plain words
+   whether another project already holds the description of this tracker
+   (its `docs/tracker.md`, the file that tells agents how to read and write
+   its tickets); a team with several projects usually keeps it in one of
+   them. On a yes, set
+   `doc` to that project's slug on the tracker entry in `tracking`, check
+   that its doc can be read, and write no `docs/tracker.md`.
 8. Check that no `<...>` placeholder remains in `README.md`, `project.yaml`,
    `AGENTS.md`, `docs/tracker.md`, or the copy's first line (the rules and
    the tracker templates use `<...>` in examples).
