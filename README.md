@@ -39,7 +39,7 @@ Work you already understand skips the map; a single small job is just `capture` 
 A project keeps three things apart (a standalone ticket lives only in the tracker):
 
 - **The repository** holds the work itself and the project's own context: its documents, its problem definitions, its decisions (one file each), and its research.
-- **The tracker** holds the items of work, including the plan for a piece of work, which lives in the parent ticket. A **tracker doc** tells an agent how to read and write tickets in that tracker and what each step of the loop means there.
+- **The tracker** holds the items of work, including the plan for a piece of work, which lives in the parent ticket. A **tracker doc** tells an agent how to read and write tickets in that tracker and what each step of the loop means there. A team keeps one tracker doc, `docs/tracker.md` in one project it shares; each of its other projects names that project with `doc` on its tracker entry in `project.yaml` and carries no copy.
 - **Agent memory** is outside this plugin's scope.
 
 ## What is here
@@ -48,7 +48,7 @@ A project keeps three things apart (a standalone ticket lives only in the tracke
 - `references/trackers/`: tracker doc templates for Todoist, OpenProject, GitHub Issues, tickets kept as Markdown files in the repository, and a blank one for any other tracker.
 - `references/tracker-setup.md`: how a tracker doc is set up, shared by the setup skills.
 - `references/tracker-lookup.md`: how every tracker-using skill finds and reads the tracker doc.
-- `references/profile.example.yaml`: the shape of the profile, one per user on each machine, that holds the projects root, the worktrees folder, scopes and their hosts, and the default tracker.
+- `references/profile.example.yaml`: the shape of the profile, one per user on each machine, that holds the projects root, the worktrees folder, scopes and their hosts, and the default tracker, with an optional `projects` mapping for a project whose own files cannot say where its tracker doc is.
 - `references/changelog.md`: changes to the standard.
 - `template/`: the files a new project starts from.
 - `scripts/sync.py`: places, compares, and updates the base block and the conventions copy; the setup skills run it. It also migrates a repository adopted under the earlier project-guide standard.
@@ -83,7 +83,7 @@ Thinking:
 
 ## Profile
 
-The skills find the user's profile on this machine through the environment variable `PLAYBOOK_PROFILE`, or else a one-line file `.playbook` in the home folder containing the profile's path. When neither exists they fall back to the older `PROJECT_GUIDE_PROFILE` and `.project-guide`, so a profile written for project-guide keeps working; the `setup-playbook-profile` skill offers to write the new pointer. The `setup-playbook-profile` skill creates the profile from a few questions; or start from `references/profile.example.yaml`. The user's tracker docs sit beside the profile file, in `trackers/<kind>.md`.
+The skills find the user's profile on this machine through the environment variable `PLAYBOOK_PROFILE`, or else a one-line file `.playbook` in the home folder containing the profile's path. When neither exists they fall back to the older `PROJECT_GUIDE_PROFILE` and `.project-guide`, so a profile written for project-guide keeps working; the `setup-playbook-profile` skill offers to write the new pointer. The `setup-playbook-profile` skill creates the profile from a few questions; or start from `references/profile.example.yaml`. The user's tracker docs sit beside the profile file, in `trackers/<kind>.md`. A repository someone else owns cannot carry a pointer to its tracker doc, so its entry under the profile's `tracker.projects` carries the `tracking` block instead: with `doc` naming the project that holds the doc, or with an optional `name`, whose doc is then `trackers/<name>.md` beside the profile.
 
 ## Upgrading from project-guide
 
