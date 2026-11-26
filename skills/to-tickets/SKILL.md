@@ -26,8 +26,8 @@ folder, two levels above this skill's folder; "The decision map" there
 defines the map. Find and read the tracker doc as
 `references/tracker-lookup.md` says, before the first tracker call: it
 covers where the doc is, empty roles, House rules (they can narrow this
-skill, never remove a confirmation), two trackers, and what to do when no
-doc is found. The plan's parent ticket goes in the primary tracker; each
+skill, never remove a confirmation), a split project tracker, and what to
+do when no doc is found. The plan's parent ticket goes in the primary tracker; each
 work ticket goes in the tracker the doc assigns its kind to.
 
 ## 1. Find the input and guard it

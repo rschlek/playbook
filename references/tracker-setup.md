@@ -7,7 +7,7 @@ The procedure the `setup-playbook-profile`, `new`, and `adopt` skills follow to 
 - The user's default tracker (from the `setup-playbook-profile` skill): `trackers/<kind>.md` in the folder that holds the profile file. It never goes inside a project's repository.
 - No profile, and the work is in a repository: `docs/tracker.md` in that repository. It needs no profile and no `project.yaml`.
 - A project's own doc (from `new` or `adopt`): `docs/tracker.md` in the project. Write one when the project is shared, when its tracker kind differs from the profile's default, or when the user says the default doc's Layout does not fit it (another location, other statuses, other rules). Otherwise the project uses the user's doc for its kind: make sure that doc exists, and run this setup for it when it does not.
-- A project with a primary and a secondary tracker gets one `docs/tracker.md` covering both, in the two-tracker shape the conventions give.
+- A project with a primary and a secondary tracker gets one `docs/tracker.md` covering both, in the split project tracker shape the conventions give.
 
 ## Steps
 

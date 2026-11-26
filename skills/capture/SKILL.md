@@ -24,8 +24,8 @@ Paths such as `references/tracker-lookup.md` are relative to the plugin's
 root folder, two levels above this skill's folder. Find and read the tracker
 doc as `references/tracker-lookup.md` says, before the first tracker call:
 it covers where the doc is, empty roles, House rules (they can narrow this
-skill, never remove a confirmation), two trackers, and what to do when no
-doc is found. The doc is all this skill needs: no `project.yaml`, and for a
+skill, never remove a confirmation), a split project tracker, and what to
+do when no doc is found. The doc is all this skill needs: no `project.yaml`, and for a
 repository's own `docs/tracker.md`, no profile.
 
 ## Procedure
@@ -35,8 +35,8 @@ repository's own `docs/tracker.md`, no profile.
    ticket, one at a time. A whole plan with ordered pieces is for the
    `to-tickets` skill; say so and offer it. When you could simply do the
    thing now in this session, say so and offer that instead.
-2. **Pick the tracker.** With two trackers, use the one the doc assigns this
-   kind of ticket to; ask only when the doc does not settle it.
+2. **Pick the tracker.** With a split project tracker, use the part the doc
+   assigns this kind of ticket to; ask only when the doc does not settle it.
 3. **Check for an existing ticket** that already covers it, with Mechanics'
    Find by name and its quirks. When a search matches whole phrases, search
    one distinctive word; when it comes back empty, list the likely place

@@ -7,10 +7,12 @@ tracking:              # absent: the profile's default tracker
 #   primary:             # decision maps, plans, every non-code ticket
 #     kind:              # a tracker kind with a tracker doc, e.g. markdown
 #     ref:               # this project's location in that tracker
+#     doc:               # optional: slug of the project whose docs/tracker.md describes this tracker; then carry no copy
 #   secondary:           # optional, one entry per ticket kind
 #     - kind:
 #       ref:
 #       tickets:         # the one kind of ticket it holds, e.g. code
+#       doc:             # optional, as for primary
 links:                 # related, depends_on, agents, sources, outputs, docs, people
 #   related:             # slugs of related projects
 #   depends_on:          # one entry per artifact this project depends on

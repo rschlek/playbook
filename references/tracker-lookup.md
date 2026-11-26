@@ -5,8 +5,24 @@ The procedure every skill that uses a tracker follows before its first tracker c
 ## Find the doc
 
 1. The current repository's `docs/tracker.md`, when it has one. This needs no profile and no `project.yaml`.
-2. Else `trackers/<kind>.md` in the folder holding the profile, for each kind in `project.yaml` `tracking` (the primary and any secondaries) when that file exists, else for the profile's `tracker.kind`. The profile is the file named by the environment variable `PLAYBOOK_PROFILE`, else by the one-line file `.playbook` in the home folder, else by the older `PROJECT_GUIDE_PROFILE` or `.project-guide`. A `ref` in `tracking` narrows the doc's Where. A primary and a secondary doc found this way work together as one two-tracker doc.
-3. Else stop: say no tracker doc was found, and ask the user to run the tracker setup in the `setup-playbook-profile` skill (it writes `docs/tracker.md` in a repository when there is no profile). Never guess a tracker, and never fall back to another tracker or a file in its place.
+2. Else the project's `tracking`: `tracking` in `project.yaml`, else `tracking` on the project's entry in the profile's `tracker.projects` (keyed by project slug, the repository's name when there is no `project.yaml`). For each tracker entry in it (the primary and any secondaries):
+   - with `doc`: `docs/tracker.md` in the project that `doc` names (see "A doc in another project" below);
+   - else with `name` (only an entry in the profile carries one): `trackers/<name>.md` in the folder holding the profile;
+   - else `trackers/<kind>.md` in the folder holding the profile, the user's doc for that kind, as before.
+
+   A `ref` in `tracking` narrows the doc's Where. A primary and a secondary doc found this way work together as the doc of one split project tracker; a doc that two entries share is read once.
+3. Else `trackers/<kind>.md` in the folder holding the profile, for the profile's `tracker.kind`.
+4. Else stop: say no tracker doc was found, and ask the user to run the tracker setup in the `setup-playbook-profile` skill (it writes `docs/tracker.md` in a repository when there is no profile). Never guess a tracker, and never fall back to another tracker or a file in its place.
+
+The profile is the file named by the environment variable `PLAYBOOK_PROFILE`, else by the one-line file `.playbook` in the home folder, else by the older `PROJECT_GUIDE_PROFILE` or `.project-guide`.
+
+## A doc in another project
+
+When an entry's `doc` names a project, its `docs/tracker.md` is read from that project's checkout under the projects root, each time. It is never copied into this project or beside the profile. A place the doc gives as "this repository" means the repository of the project being worked in, not the project that holds the doc, unless the entry's `ref` says otherwise.
+
+- The check below applies only when the checkout has a remote and its branch follows a remote branch. With neither, there is nothing to be behind: read it as it is, with no notice and no fetch. Otherwise, once per session, at the first lookup, check whether that checkout is behind its remote. The check may fetch from the remote, and it changes no working file. When the checkout is behind, say so in one line and update it on the user's yes. That yes covers the update alone: re-read the doc and carry on from where the skill was, with its own questions and its own confirmation. When the check cannot run (no network, no permission to fetch), read the checkout as it is, say in one line that it could not be checked, and do not look for the answer another way.
+- When the project is not on this machine, say which project is needed and offer to get it, asking for its repository's address when it is not known. When the user has no access to it, say so and stop. When its checkout has no `docs/tracker.md`, say so and stop. Never fall back to another tracker's doc.
+- The doc changes in its home project, through that project's normal review. A skill that finds a line of it wrong shows the corrected text and makes the change in the home project on the user's yes.
 
 ## Read it
 
@@ -20,9 +36,9 @@ The procedure every skill that uses a tracker follows before its first tracker c
 - In a shared project (`project.yaml` says `shared: true`, or a `visibility` other than private), text posted to the tracker (a comment, a note, a resolve comment, a new ticket, a plan) follows the record rule in "Documents" of `references/conventions.md`: project facts only, no personal details, nothing about people beyond their role in the work. Show the user the exact text before posting it. In a project that is the user's alone, post as the skill says.
 - A plan's parent ticket is recognised by its title, which starts `Plan:`. When the Layout's Parent and children is empty, its work tickets carry a `Plan: <title and link>` line in their description, and the plan's body lists each with its link.
 
-## Two trackers
+## A split project tracker
 
-A doc may describe a primary and a secondary tracker, each holding one kind of ticket.
+A project tracker may be split: its doc describes a primary and a secondary tracker, each holding one kind of ticket.
 
 - Use the Mechanics and Layout of the tracker the ticket is in, or goes in. The doc says which kind of ticket lives where; ask the user only when it does not settle which tracker a ticket belongs to.
 - Picking with no tracker named: query each tracker that defines Pickable work, merge the results, and name each candidate's tracker.
