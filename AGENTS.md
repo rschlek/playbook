@@ -2,7 +2,7 @@
 
 - This repo is a plugin for Claude Code and Codex. Consumers install it from its remote on the `stable` ref. Work lands on `main`; promote `main` to `stable` deliberately, never as a side effect. A release bumps `version` in both manifests.
 - Everything here is public and generic: no person, company, team, host, machine, absolute path, private tool, or real URL. Say "the user", "the tracker", "the memory system", "the profile". Machine-specific values belong in a profile, not in this repo. The exceptions are the `author` field in the plugin manifests and this repository's own public URL (https://github.com/rschlek/playbook), which the template and the sync script write into every project. A public tool the standard recommends, or a skill adapted from one, may be credited by its author's public name and its repository link, and an adapted skill's README keeps its MIT attribution.
-- Tracker products are named only in the tracker templates under `references/trackers/`, in lists of the shipped templates, and in dated research documents under `docs/`. Skills name no tracker product; they read the tracker doc.
+- Tracker products are named only in the tracker templates under `references/trackers/`, in lists of the shipped templates, and in dated research documents under `docs/`. A dated research document also links the public sources it cites. Skills name no tracker product; they read the tracker doc.
 - Skills never tell the agent to read, write, or update agent memory. Memory is a separate workflow that this plugin does not direct.
 - This repository is the source of the standard, so it carries no `docs/project-conventions.md` copy of its own.
 - Any change to the rules in `references/conventions.md` gets a dated entry in `references/changelog.md`.
